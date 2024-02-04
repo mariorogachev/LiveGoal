@@ -1,4 +1,5 @@
-import Header from "./(components)/Navbar/page"
+import Header from './(components)/Header'
+import Footer from './(components)/Footer'
 import './global.css'
 
 export const metadata = {
@@ -8,14 +9,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
  return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       
-      <body>
+      <body className="bg-gray-200 dark:bg-gray-800">
+        
       <header>
     <Header/>
       </header>
-        {children}
+      <main className='p-44'>
+      {children}
+      </main>
         
+        <footer>
+        <Footer/>
+        </footer>
         </body>
     </html>
   )
