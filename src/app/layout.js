@@ -1,4 +1,5 @@
 import Header from './(components)/Header'
+import SportsTabs from './news/page'
 import Footer from './(components)/Footer'
 import './global.css'
 
@@ -11,15 +12,16 @@ export default function RootLayout({ children }) {
  return (
     <html lang="en" suppressHydrationWarning>
       
+      
       <body className="bg-gray-200 dark:bg-gray-800">
         
       <header>
     <Header/>
       </header>
-      <main className='p-44'>
+      <main>
       {children}
       </main>
-        
+      
         <footer>
         <Footer/>
         </footer>

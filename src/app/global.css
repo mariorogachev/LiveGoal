@@ -21,6 +21,4 @@ footer {
     
   }
   .dark-logo {
-    filter: invert(1); /* Invert the colors to make it white in dark mode */
-  }
-
+    filter: invert(1);}
