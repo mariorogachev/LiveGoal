@@ -1,5 +1,4 @@
 import Header from './(components)/Header'
-import SportsTabs from './news/page'
 import Footer from './(components)/Footer'
 import './global.css'
 

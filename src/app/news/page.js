@@ -56,7 +56,7 @@ const SportsTabs = () => {
           <button className={`uppercase h-20 w-full py-2 px-4 mb-2 text-center ${selectedSport === 'Football' ? 'bg-gray-700' : 'hover:bg-gray-700'} focus:outline-none focus:shadow-outline`} onClick={() => changeSport('Football')}>Football</button>
           <button className={`uppercase h-20 w-full py-2 px-4 mb-2 text-center ${selectedSport === 'Basketball' ? 'bg-gray-700' : 'hover:bg-gray-700'} focus:outline-none focus:shadow-outline`} onClick={() => changeSport('Basketball')}>Basketball</button>
           <button className={`uppercase h-20 w-full py-2 px-4 mb-2 text-center ${selectedSport === 'Tennis' ? 'bg-gray-700' : 'hover:bg-gray-700'} focus:outline-none focus:shadow-outline`} onClick={() => changeSport('Tennis')}>Tennis</button>
-          {/* Add more sports as needed */}
+          
         </div>
       </div>
       <div className="flex-grow p-4 w-full overflow-y-auto h-[800px] dark:border border-solid">
@@ -93,6 +93,8 @@ const SportsTabs = () => {
       )}
     </div>
     </div>
+    
+    
   );
 };
 

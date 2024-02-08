@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -29,3 +30,10 @@ footer {
     button{
         font-family: 'Poppins', sans-serif;
     }
+    .navbar {
+        transition: background-color 0.6s ease;
+      }
+      
+      
+      .navbar.bg-scroll {
+        background-color: #333;}
