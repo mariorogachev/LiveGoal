@@ -1,39 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-h1{
-    font-family: 'Bebas Neue', sans-serif,'Mulish', sans-serif;}
-li{
-    font-family: 'Bebas Neue', sans-serif,'Mulish', sans-serif;
+h1 {
+  font-family: "Bebas Neue", sans-serif, "Mulish", sans-serif;
+}
+li {
+  font-family: "Bebas Neue", sans-serif, "Mulish", sans-serif;
 }
 footer {
-    font-family: 'Bebas Neue', sans-serif,'Mulish', sans-serif;
-    margin-top: 2%;
-    height: 60px;
-    width: 100%;
-    bottom: 0;
-    border-top: 1px solid grey;
-    letter-spacing:1px;
-    
-  }
-  .dark-logo {
-    filter: invert(1);
-    }
+  font-family: "Bebas Neue", sans-serif, "Mulish", sans-serif;
+  margin-top: 2%;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid grey;
+  letter-spacing: 1px;
+}
+.dark-logo {
+  filter: invert(1);
+}
 
-    button{
-        font-family: 'Poppins', sans-serif;
-    }
-    .navbar {
-        transition: background-color 0.6s ease;
-      }
-      
-      
-      .navbar.bg-scroll {
-        background-color: #333;}
+button {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  transition: background-color 0.4s ease;
+}
