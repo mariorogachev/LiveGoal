@@ -1,0 +1,51 @@
+/* Entire calendar container */
+.react-calendar {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  border: 0px solid;
+  background-color: transparent;
+  color: #333;
+}
+
+/* Calendar tile styling */
+.react-calendar__tile {
+  background-color: transparent;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight weekends */
+.react-calendar__tile--weekend {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Highlight today's date */
+.react-calendar__tile--now {
+  background-color: #b6bfc2;
+  color: white;
+}
+/* Styling for navigation buttons */
+.react-calendar__navigation {
+  background-color: transparent;
+}
+
+/* Styling for navigation button labels */
+.react-calendar__navigation__label {
+  color: #333;
+}
+
+/* Styling for navigation buttons */
+.react-calendar__navigation__arrow {
+  color: #333;
+  background-color: transparent;
+}
+
+.react-calendar__tile--active {
+  background: #353839;
+  color: white;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #353839;
+  color: white;
+}

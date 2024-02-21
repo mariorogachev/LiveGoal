@@ -14,13 +14,11 @@ li {
 }
 footer {
   font-family: "Bebas Neue", sans-serif, "Mulish", sans-serif;
-  margin-top: 2%;
-  height: 60px;
-  width: 100%;
   bottom: 0;
   border-top: 1px solid grey;
   letter-spacing: 1px;
 }
+
 .dark-logo {
   filter: invert(1);
 }

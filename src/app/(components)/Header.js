@@ -138,11 +138,8 @@ const Header = () => {
                   className="block md:bg-transparent "
                   aria-current="page"
                 >
-                  Home
+                  Scores
                 </Link>
-              </li>
-              <li>
-                <Link href="/result">Results</Link>
               </li>
               <li>
                 <Link href="/news">News</Link>

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
         <main className="mx-auto">{children}</main>
-        <footer>
+        <footer className="mt-20">
           <Footer />
         </footer>
       </body>
