@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
       <body className="bg-gray-200 dark:bg-gray-800">
         <header>
           <Header />
+
         </header>
         <main className="mx-auto">{children}</main>
         <footer className="mt-20">

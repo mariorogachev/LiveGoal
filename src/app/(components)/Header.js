@@ -11,37 +11,14 @@ import MenuTab from "@/public/svg/menutab.svg";
 import SearchLogo from "@/public/svg/searchicon.svg";
 import "../global.css";
 
+import Sport from "./SportsTab";
+
 const Header = () => {
   const [selectedSport, setSelectedSport] = useState("");
-  const [selectedLeague, setSelectedLeague] = useState("");
-  const [news, setNews] = useState([]);
 
-  const sportsLeagues = {
-    Football: ["Premier League", "La Liga", "Serie A"],
-    Basketball: ["NBA", "EuroLeague", "CBA"],
-    Tennis: ["Wimbledon", "US Open", "French Open"],
-  };
-
-  const changeSport = (sport) => {
+  const handleSportChange = (sport) => {
     setSelectedSport(sport);
-    setSelectedLeague("");
-    setNews([]);
   };
-
-  const changeLeague = (league) => {
-    setSelectedLeague(league);
-  };
-
-  useEffect(() => {
-    const fetchNews = async () => {
-      if (selectedSport && selectedLeague) {
-        const newsData = await fetchNewsApi(selectedSport, selectedLeague);
-        setNews(newsData);
-      }
-    };
-
-    fetchNews();
-  }, [selectedSport, selectedLeague]);
 
   const savedTheme =
     typeof window !== "undefined" ? localStorage.getItem("theme") : null;
@@ -164,86 +141,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="flex bg-gray-300 px-52">
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Football" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Football")}
-          >
-            Football
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Basketball"
-                ? "bg-gray-700"
-                : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Basketball")}
-          >
-            Basketball
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Tennis" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Tennis")}
-          >
-            Tennis
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Hockey" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Hockey")}
-          >
-            Hockey
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Esports" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Esports")}
-          >
-            Esports
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "MotorSport"
-                ? "bg-gray-700"
-                : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("MotorSport")}
-          >
-            MotorSport
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Volleyball"
-                ? "bg-gray-700"
-                : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Volleyball")}
-          >
-            Volleyball
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Baseball" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Baseball")}
-          >
-            Baseball
-          </button>
-          <button
-            className={`uppercase h-10 flex-1 text-center ${
-              selectedSport === "Rugby" ? "bg-gray-700" : "hover:bg-gray-700"
-            } focus:outline-none focus:shadow-outline`}
-            onClick={() => changeSport("Rugby")}
-          >
-            Rugby
-          </button>
-        </div>
+        <Sport selectedSport={selectedSport} onChangeSport={handleSportChange} />
       </nav>
     </>
   );

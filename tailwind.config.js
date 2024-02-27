@@ -12,6 +12,7 @@ module.exports = {
         128: "32rem", // following the standard of 128 / 4 = 32
         152: "38rem",
         84: "41rem",
+        200: "50rem",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
