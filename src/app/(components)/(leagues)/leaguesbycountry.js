@@ -87,9 +87,9 @@ const LeaguesByCountry = () => {
               <div>
                 <ul>
                   {leagues.map((league) => (
-                    <li className="mx-3" key={league.league.id}>
+                    <button className="flex ml-3" key={league.league.id}>
                       {league.league.name}
-                    </li>
+                    </button>
                   ))}
                 </ul>
               </div>

@@ -1,15 +1,14 @@
 /* Entire calendar container */
 .react-calendar {
-  padding: 10px;
+  padding: 15px;
   font-family: "Poppins", sans-serif;
-  border: 0px solid;
-  background-color: transparent;
+  background-color: white;
   color: #333;
 }
 
 /* Calendar tile styling */
 .react-calendar__tile {
-  background-color: transparent;
+  background-color: white;
   padding: 10px;
   transition: background-color 0.3s ease;
 }
@@ -26,18 +25,18 @@
 }
 /* Styling for navigation buttons */
 .react-calendar__navigation {
-  background-color: transparent;
+  background-color: white;
 }
 
 /* Styling for navigation button labels */
 .react-calendar__navigation__label {
-  color: #333;
+  color: black;
 }
 
 /* Styling for navigation buttons */
 .react-calendar__navigation__arrow {
   color: #333;
-  background-color: transparent;
+  background-color: white;
 }
 
 .react-calendar__tile--active {
@@ -48,4 +47,18 @@
 .react-calendar__tile--active:enabled:focus {
   background: #353839;
   color: white;
+}
+.react-calendar__navigation__label__labelText {
+  color: black;
+}
+.react-calendar__navigation__arrow {
+  color: black;
+  padding-bottom: 15px;
+}
+.react-calendar__navigation__arrow {
+  color: black;
+}
+
+.react-calendar__navigation__prev2-button {
+  color: black;
 }
